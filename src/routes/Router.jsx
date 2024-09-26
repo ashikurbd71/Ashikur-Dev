@@ -1,3 +1,4 @@
+import UserRoot from "@/layout/userlayout/UserRoot";
 import Home from "@/pages/Home";
 
 import {
@@ -10,7 +11,7 @@ import {
 
     {
         path : "/",
-        element : <Home/>
+        element : <UserRoot/>
     }
  ])
 
