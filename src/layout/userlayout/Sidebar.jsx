@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import logo from "../../assets/ovi.jpeg"
 const Sidebar = () => {
   return (
-    <div className=" w-[300px] h-[600px] p-6 bg-white shadow-lg rounded-lg">
+    <div className=" w-[300px] h-[580px] p-6 bg-white shadow-lg rounded-lg">
       {/* Profile Image */}
       <div className="flex flex-col items-center">
         <img

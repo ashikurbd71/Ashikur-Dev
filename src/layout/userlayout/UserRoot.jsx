@@ -1,17 +1,19 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import { Outlet } from 'react-router-dom';
+import Navber from '@/pages/component/Navber';
 
 const UserRoot = () => {
   return (
     <>
-      <div className="flex justify-center mx-auto  xs:w-[100%] sm:w-[90%] md:w-[80%] lg:w-[1000px] xl:w-[1200px] items-center min-h-screen"> {/* Center content */}
+      <div className="  grid grid-cols-2  items-center  min-h-screen"> {/* Center content */}
 
-          <div className="">
+          <div className="ml ml-32">
             <Sidebar />
           </div>
-          <div className="">
-            <Outlet />
+          <div className="flex flex-col -ml-[160px]  -mt-[30px] ">
+            <Navber/>
+            <Outlet  />
           </div>
         </div>
   

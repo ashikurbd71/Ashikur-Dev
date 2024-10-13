@@ -1,5 +1,6 @@
 import UserRoot from "@/layout/userlayout/UserRoot";
-import Home from "@/pages/Home";
+import About from "@/pages/About";
+
 
 import {
     createBrowserRouter,
@@ -11,7 +12,13 @@ import {
 
     {
         path : "/",
-        element : <UserRoot/>
+        element : <UserRoot/>,
+        children : [
+         {
+            path : "/about",
+            element : <About/>,
+         }
+        ]
     }
  ])
 
