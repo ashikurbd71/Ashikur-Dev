@@ -11,8 +11,8 @@ const UserRoot = () => {
           <div className="ml ml-32">
             <Sidebar />
           </div>
-          <div className="flex flex-col -ml-[160px]  -mt-[30px] ">
-            <Navber/>
+          <div className="flex flex-col -ml-[160px]    ">
+            <Navber className="mt "/>
             <Outlet  />
           </div>
         </div>

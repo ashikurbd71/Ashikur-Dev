@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navber = () => {
   return (
-    <div className="w-full bg-white flex items-center py-4 px-10 rounded-lg shadow-md space-x-16 ">
+    <div className="w-full bg-white mt-10 flex items-center py-4 px-10 rounded-lg shadow-md space-x-16 ">
       <NavItem to="/about" icon={<User />} label="ABOUT" />
       <NavItem to="/resume" icon={<FileText />} label="RESUME" />
       <NavItem to="/works" icon={<Eye />} label="WORKS" />

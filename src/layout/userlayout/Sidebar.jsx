@@ -1,10 +1,11 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Calendar, Download, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
-import logo from "../../assets/ovi.jpeg"
+import logo from "../../assets/ovi.jfif"
+import { ReactTyped } from 'react-typed';
 const Sidebar = () => {
   return (
-    <div className=" w-[300px] h-[580px] p-6 bg-white shadow-lg rounded-lg">
+    <div className=" w-[300px] h-[580px] -mt-[115px] p-6 bg-white shadow-lg rounded-lg">
       {/* Profile Image */}
       <div className="flex flex-col items-center">
         <img
@@ -13,10 +14,23 @@ const Sidebar = () => {
           className="rounded-lg w-44 h-44 object-cover border-4 border-white shadow-lg mb-4"
         />
         {/* Name and Job Title */}
-        <h2 className="text-2xl font-semibold">Ashikur Rahman Ovi</h2>
-        <span className="text-sm text-gray-500 mt-2 px-2 py-1 bg-gray-100 rounded-full">
-          Software Engiineer
-        </span>
+        <h2 className="text-xl font-semibold">Ashikur Rahman Ovi</h2>
+        <ReactTyped
+  className="text-center text-md text-[#EC4899] font-semibold mt-2 px-2 py-2 bg-gray-100 rounded-full w-[230px] mx-auto"
+  strings={[
+    "Software Developer",
+    "MERN Stack Developer",
+    "Entrepreneur",
+  ]}
+  typeSpeed={40}
+  backSpeed={50}
+  loop
+/>
+
+
+
+
+      
 
         {/* Social Icons with NavLink */}
         <div className="flex mt-4 space-x-3">
