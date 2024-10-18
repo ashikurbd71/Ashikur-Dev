@@ -6,14 +6,22 @@ import Navber from '@/pages/component/Navber';
 const UserRoot = () => {
   return (
     <>
-      <div className="  grid grid-cols-2  items-center  min-h-screen"> {/* Center content */}
+  
+      <div className="  ml-28 flex gap gap-10 justify-items-center  items-center  "> {/* Center content */}
 
-          <div className="ml ml-32">
+          <div className="ml ">
             <Sidebar />
           </div>
-          <div className="flex flex-col -ml-[160px]    ">
-            <Navber className="mt "/>
-            <Outlet  />
+       
+          <div className="flex flex-col mt-12 ">
+              <div>
+              <Navber className=""/>
+              </div>
+
+              <div className=' min-h-screen w-[800px] mt-3'>
+              <Outlet  />
+              </div>
+            
           </div>
         </div>
   

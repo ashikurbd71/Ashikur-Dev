@@ -1,11 +1,23 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Calendar, Download, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Calendar, Download, Facebook, Instagram, Twitter, Linkedin, Github } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import logo from "../../assets/ovi.jfif"
 import { ReactTyped } from 'react-typed';
+import { saveAs } from 'file-saver';
 const Sidebar = () => {
+
+
+  const handleDownload = () => {
+    // Replace this URL with the path to your CV file
+    const cvUrl = '/public/AshikurRahmanOviResume.pdf';
+    
+    // Use the file-saver library or a direct anchor to download the file
+    saveAs(cvUrl, 'AshikurRahmanOvi_CV.pdf');
+  };
+
+
   return (
-    <div className=" w-[300px] h-[580px] -mt-[115px] p-6 bg-white shadow-lg rounded-lg">
+    <div className=" w-[300px] h-[580px] -mt-[120px] p-6 bg-white shadow-lg rounded-lg">
       {/* Profile Image */}
       <div className="flex flex-col items-center">
         <img
@@ -22,8 +34,8 @@ const Sidebar = () => {
     "MERN Stack Developer",
     "Entrepreneur",
   ]}
-  typeSpeed={40}
-  backSpeed={50}
+  typeSpeed={60}
+  backSpeed={70}
   loop
 />
 
@@ -33,35 +45,41 @@ const Sidebar = () => {
       
 
         {/* Social Icons with NavLink */}
-        <div className="flex mt-4 space-x-3">
-          <NavLink
-            to="/facebook"
+        <div className="flex justify-items-center mt-4 space-x-3">
+          <a
+             href='https://www.facebook.com/mdovi.7398'
             className="text-blue-500"
             activeClassName="font-bold"
+            target='blank'
           >
            <Facebook/>
-          </NavLink>
-          <NavLink
-            to="/instagram"
+          </a>
+          <a
+             href="https://www.instagram.com/ashikurrahmanovi.1/"
+            
             className="text-pink-500"
             activeClassName="font-bold"
+                target='blank'
           >
             <Instagram/>
-          </NavLink>
-          <NavLink
-            to="/twitter"
+          </a>
+          <a
+           href='https://github.com/ashikurbd71?tab=repositories'
             className="text-blue-400"
             activeClassName="font-bold"
+                target='blank'
           >
-            <Twitter/>
-          </NavLink>
-          <NavLink
-            to="/linkedin"
+               <Github />
+
+          </a>
+          <a
+               href='https://www.linkedin.com/in/ashikur-ovi/'
             className="text-blue-700"
             activeClassName="font-bold"
+                target='blank'
           >
             <Linkedin/>
-          </NavLink>
+          </a>
         </div>
       </div>
 
@@ -90,14 +108,13 @@ const Sidebar = () => {
 
       {/* Download CV with NavLink */}
       <div className="mt-6">
-        <NavLink
-          to="/download-cv"
-          className="w-full flex items-center justify-center space-x-2 px-4 py-2 bg-pink-500 text-white font-semibold rounded-md shadow hover:bg-pink-600 transition duration-200"
-          activeClassName="bg-pink-600"
-        >
-          <Download className="w-5 h-5" />
-          <span>Download CV</span>
-        </NavLink>
+      <button
+      onClick={handleDownload}
+      className="w-full flex items-center justify-center space-x-2 px-4 py-2 bg-pink-500 text-white font-semibold rounded-md shadow hover:bg-pink-600 transition duration-200"
+    >
+      <Download className="w-5 h-5" />
+      <span>Download CV</span>
+    </button>
       </div>
     </div>
   );

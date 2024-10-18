@@ -6,7 +6,7 @@ const About = () => {
     return (
         
         <>
-        <div className=' py-6'>
+        <div className='py-4'>
 
   <div className='bg bg-white rounded-md shadow-md px-4'>
   <div className="container mx-auto text-left p-10">
@@ -14,13 +14,13 @@ const About = () => {
   className=" text-[#EC4899] font-semibold "
   strings={[
     "Ashikur Rahman Ovi",
-    "a Muslim",
-    "21 Years Old",
     "a Bangladeshi",
+    "21 Years Old",
+    
 
   ]}
-  typeSpeed={40}
-  backSpeed={50}
+  typeSpeed={60}
+  backSpeed={70}
   loop
 /> </p>
         <h1 className="text-5xl font-bold mb-6">

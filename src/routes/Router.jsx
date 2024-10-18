@@ -1,5 +1,6 @@
 import UserRoot from "@/layout/userlayout/UserRoot";
 import About from "@/pages/About";
+import Experience from "@/pages/Experience";
 
 
 import {
@@ -15,8 +16,13 @@ import {
         element : <UserRoot/>,
         children : [
          {
-            path : "/about",
+            path : "/",
             element : <About/>,
+         },
+
+         {
+            path : "/experince",
+            element : <Experience/>,
          }
         ]
     }
