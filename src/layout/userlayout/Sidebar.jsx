@@ -17,7 +17,7 @@ const Sidebar = () => {
 
 
   return (
-    <div className=" w-[300px] h-[580px] -mt-[120px] p-6 bg-white shadow-lg rounded-lg">
+    <div className=" w-[300px] h-[580px] mt fixed mt-12 mb-10 p-6 bg-white shadow-lg rounded-lg">
       {/* Profile Image */}
       <div className="flex flex-col items-center">
         <img
@@ -116,6 +116,8 @@ const Sidebar = () => {
       <span>Download CV</span>
     </button>
       </div>
+
+       
     </div>
   );
 };

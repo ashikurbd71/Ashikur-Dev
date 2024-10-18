@@ -25,7 +25,7 @@ const About = () => {
 /> </p>
         <h1 className="text-5xl font-bold mb-6">
           Software Developer <br />
-          and <span className="text-pink-400">Entrepreneur</span> Based in <br />
+          and <span className="text-[#EC4899]">Entrepreneur</span> Based in <br />
           Rangpur, Bangladesh.
         </h1>
         <p className="text-md leading-relaxed max-w-2xl mx-auto">
