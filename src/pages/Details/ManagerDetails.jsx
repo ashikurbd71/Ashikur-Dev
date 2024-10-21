@@ -14,7 +14,7 @@ import manager from "../../assets/managerlogin.png";
 
 const ManagerDetails = () => {
   return (
-    <div className="min-h-screen mt-6  p-10   bg-white rounded-md shadow-md text-black">
+    <div className=" lg:mt-6  lg:p-10   bg-white rounded-md shadow-md text-black">
   <h2 className="text-xl text-[#EC4899] font-bold border-b-2 border-black mb-8">DETAILS</h2>
  <div className='mb my-16'>
  <Swiper

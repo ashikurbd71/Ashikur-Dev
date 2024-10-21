@@ -43,10 +43,10 @@ const backends = [
 
 const Skills = () => {
   return (
-    <div className="container mx-auto  py-5">
-          <h2 className="text-xl text-[#EC4899] font-bold border-b-2 border-black mb-4">SKILLS</h2>
+    <div className="container mx-auto  lg:py-5">
+          <h2 className="lg:text-xl text-lg text-[#EC4899] font-bold border-b-2 border-black mb-4">SKILLS</h2>
 
-      <h2 className="text-2xl font-bold text-center mb-8">FRONTEND</h2>
+      <h2 className="lg:text-2xl text-xl font-bold text-center mb-8">FRONTEND</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {skills.map((skill, index) => (
           <div
@@ -73,7 +73,7 @@ const Skills = () => {
 
 
   {/* backend */}
-  <h2 className="text-2xl font-bold text-center mb-8 pt-4">BACKEND</h2>
+  <h2 className="lg:text-2xl text-xl font-bold text-center mb-8 pt-4">BACKEND</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {backends.map((skill, index) => (
           <div

@@ -25,14 +25,14 @@ const Education = () => {
   ];
 
   return (
-    <section className="mt mt-6 rounded-md shadow-md p-10 bg-white">
-      <h2 className="text-xl text-[#EC4899] font-bold border-b-2 border-black mb-8">EDUCATION</h2>
+    <section className="mt lg:mt-6 rounded-md shadow-md lg:p-10 p-5 bg-white">
+      <h2 className="lg:text-xl  text-lg text-[#EC4899] font-bold border-b-2 border-black mb-8">EDUCATION</h2>
       <div className="relative border-l-2 border-[#EC4899] pl-6">
         {educationData.map((education, index) => (
           <div key={index} className="mb-10 relative">
             <div className="absolute w-4 h-4 bg-[#EC4899] rounded-full -left-6 top-1.5"></div>
             <p className="text-sm font-semibold text-gray-500">{education.yearRange}</p>
-            <h3 className="text-xl font-semibold text-[#EC4899]">{education.degree}</h3>
+            <h3 className="lg:text-xl text-lg font-semibold text-[#EC4899]">{education.degree}</h3>
             <p className="text-md text-gray-700"> <span className='font font-semibold'>{education.schoolName}</span> - {education.location}</p>
             <p className="text-gray-600 mt-2">{education.description}</p>
           </div>

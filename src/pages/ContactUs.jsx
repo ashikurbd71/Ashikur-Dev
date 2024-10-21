@@ -32,9 +32,9 @@ export const ContactUs = () => {
 
 
   return (
-    <div className="flex justify-center items-center  mt-6">
-    <div className="bg-white p-10 rounded-md shadow-md  w-full">
-    <h2 className="text-xl text-[#EC4899] font-bold border-b-2 border-black mb-8">CONTACT US</h2>
+    <div className="flex justify-center items-center  lg:mt-6">
+    <div className="bg-white lg:p-10 p-5 rounded-md shadow-md  w-full">
+    <h2 className="lg:text-xl text-lg text-[#EC4899] font-bold border-b-2 border-black mb-8">CONTACT US</h2>
       
       <form ref={form} onSubmit={sendEmail} className="space-y-4">
         {/* Name input */}

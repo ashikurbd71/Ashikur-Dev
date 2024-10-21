@@ -2,8 +2,8 @@ import { Calendar, MapPin } from 'lucide-react'; // Importing Lucide Icons
 
 const Experience = () => {
   return (
-    <div className=" bg-white w-full rounded-md shadow-md p-10  mt-6 mb-6">
-      <h2 className="text-xl text-[#EC4899] font-bold border-b-2 border-black mb-4">EXPERIENCE</h2>
+    <div className=" bg-white w-full rounded-md shadow-md lg:p-10 p-5  lg:mt-6 mb-6">
+      <h2 className="lg:text-xl text-lg text-[#EC4899] font-bold border-b-2 border-black mb-4">EXPERIENCE</h2>
 
       <div className="mb-3">
         {/* Job Title */}

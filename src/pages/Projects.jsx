@@ -31,7 +31,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="pt pt-6">
+    <section className="pt lg:pt-6">
    <h2 className="text-xl text-[#EC4899] font-bold border-b-2 border-black mb-8">PROJECTS</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

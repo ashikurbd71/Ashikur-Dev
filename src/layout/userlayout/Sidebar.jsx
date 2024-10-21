@@ -17,7 +17,7 @@ const Sidebar = () => {
 
 
   return (
-    <div className=" w-[300px] h-[580px] mt fixed mt-12 mb-10 p-6 bg-white shadow-lg rounded-lg">
+    <div className=" lg:w-[300px] h-[580px] mt lg:fixed lg:mt-12 mt-16 mb-10 m p-6 bg-white shadow-lg rounded-lg">
       {/* Profile Image */}
       <div className="flex flex-col items-center">
         <img
@@ -32,6 +32,7 @@ const Sidebar = () => {
   strings={[
     "Software Developer",
     "MERN Stack Developer",
+    "Full Stack Developer",
     "Entrepreneur",
   ]}
   typeSpeed={60}
