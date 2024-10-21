@@ -1,5 +1,6 @@
 import React from 'react';
 import { Eye, Info } from 'lucide-react'; // Example icons from Lucide
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const projects = [
@@ -9,7 +10,7 @@ const Projects = () => {
       description: 'A multi-vendor e-commerce system. It is a platform that allows the user to buy and sell products online.',
       technologies: ['Tailwind', 'Next.js', 'Nest.js', 'Redux', 'MongoDB'],
       liveLink: '#',
-      detailsLink: '#',
+      detailsLink: '/managerdetails',
     },
     {
       image: 'https://via.placeholder.com/300x200', // Replace with actual image paths
@@ -17,7 +18,7 @@ const Projects = () => {
       description: 'An exclusive phone reselling website. There are several categories with several products. Sellers and buyers can have their own role to sell and buy products.',
       technologies: ['Tailwind', 'MerakiUI', 'React', 'MongoDB', 'JWT'],
       liveLink: '#',
-      detailsLink: '#',
+      detailsLink: '/slamcsdetails',
     },
     {
       image: 'https://via.placeholder.com/300x200', // Replace with actual image paths
@@ -25,7 +26,7 @@ const Projects = () => {
       description: 'An exclusive Poster-related service website. Several services that a person offers along with reviews are displayed.',
       technologies: ['Tailwind', 'React', 'Node.js', 'DaisyUI', 'MongoDB'],
       liveLink: '#',
-      detailsLink: '#',
+      detailsLink: '/rubydetails',
     },
   ];
 
@@ -51,22 +52,20 @@ const Projects = () => {
               ))}
             </div>
             <div className="flex jus justify-center gap-8 pt-3">
-              <a
-                href={project.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+              aria-disabled
+               to={`${project.liveLink}`}
                 className="flex items-center text-sm text-white gap-2 bg-[#EC4899] px-3 py-2 rounded-md"
               >
               Live View
-              </a>
-              <a
-                href={project.detailsLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              </Link>
+              <Link
+                 to={project.detailsLink}
+        
                 className="flex items-center text-sm text-white gap-2 bg-[#EC4899]  px-3 py-2 rounded-md"
               >
                  Details
-              </a>
+              </Link>
             </div>
           </div>
         ))}
