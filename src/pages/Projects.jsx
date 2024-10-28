@@ -1,19 +1,21 @@
 import React from 'react';
 import { Eye, Info } from 'lucide-react'; // Example icons from Lucide
 import { Link } from 'react-router-dom';
+import manager from "../assets/manager11.png"
+import slacms from "../assets/slcehome.png"
 
 const Projects = () => {
   const projects = [
     {
-      image: 'https://via.placeholder.com/300x200', // Replace with actual image paths
+      image: manager, // Replace with actual image paths
       title: 'Manager',
-      description: 'A multi-vendor e-commerce system. It is a platform that allows the user to buy and sell products online.',
-      technologies: ['Tailwind', 'Next.js', 'Nest.js', 'Redux', 'MongoDB'],
+      description: 'A Hostel Information Management System. This platform allows owners to manage hostel operations, including user management and meal planning.',
+      technologies: ['Tailwind', 'React.js', 'Nest.js', 'Redux', 'Postgresql',"React Router","Shadcn Ui"],
       liveLink: '#',
       detailsLink: '/managerdetails',
     },
     {
-      image: 'https://via.placeholder.com/300x200', // Replace with actual image paths
+      image: slacms, // Replace with actual image paths
       title: 'SLACMS',
       description: 'An exclusive phone reselling website. There are several categories with several products. Sellers and buyers can have their own role to sell and buy products.',
       technologies: ['Tailwind', 'MerakiUI', 'React', 'MongoDB', 'JWT'],
@@ -37,7 +39,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <div key={index} className="bg-white  text-black p-6 rounded-lg shadow-md">
-            <img src={project.image} alt={project.title} className="mb-4 pl-4 rounded-md" />
+            <img src={project.image} alt={project.title} className="mb-4  rounded-md" />
             <h3 className="text-xl text-[#EC4899] font-semibold">{project.title}</h3>
             <p className="mb-4">{project.description}</p>
             <h4 className="font-medium">Technologies:</h4>

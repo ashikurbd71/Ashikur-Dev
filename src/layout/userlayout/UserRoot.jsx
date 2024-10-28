@@ -8,7 +8,7 @@ const UserRoot = () => {
   return (
     <>
   
-      <div className="  lg:ml-28 px-5 flex gap lg:gap-10 lg:flex-row flex-col lg:justify-items-center  "> {/* Center content */}
+      <div className="  lg:ml-24 2xl:ml-[380px] px-5 flex gap lg:gap-10 lg:flex-row flex-col lg:justify-items-center  "> {/* Center content */}
 
           <div className="ml ">
             <Sidebar />
@@ -19,7 +19,7 @@ const UserRoot = () => {
               <Navber className=""/>
               </div>
 
-              <div className=' min-h-screen lg:w-[800px] lg:mt-24 mb-12 lg:ml-[290px]'>
+              <div className=' min-h-screenZ lg:w-[800px] lg:mt-24 mb-12 lg:ml-[290px] '>
               <Outlet  />
               </div>
 

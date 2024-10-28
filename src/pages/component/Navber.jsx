@@ -23,7 +23,7 @@ const Navber = () => {
 
       {/* Mobile Drawer toggle button */}
       <div className="md:hidden bg-transparent backdrop-blur w-full shadow-md fixed flex py-1 gap items-center justify-between top-0 right-0 z-20">
-        <h1 className='fon font-bold pl-6 text-lg'>A<span className='text-[#EC4899]'>S</span>HIK<span className='text-[#EC4899]'>U</span>R D<span className='text-[#EC4899]'>e</span>v.</h1>
+        <h1 className='fon font-bold pl-6  text-xl'>O<span className='text-[#EC4899] '>V</span>I </h1>
         <button onClick={toggleDrawer} className='pr-5'>
           {isDrawerOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
         </button>
