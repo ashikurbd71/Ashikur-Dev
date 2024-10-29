@@ -3,30 +3,30 @@ import { Eye, Info } from 'lucide-react'; // Example icons from Lucide
 import { Link } from 'react-router-dom';
 import manager from "../assets/manager11.png"
 import slacms from "../assets/slcehome.png"
-
+import ruby from "../assets/ruby1.png"
 const Projects = () => {
   const projects = [
     {
       image: manager, // Replace with actual image paths
       title: 'Manager',
       description: 'A Hostel Information Management System. This platform allows owners to manage hostel operations, including user management and meal planning.',
-      technologies: ['Tailwind', 'React.js', 'Nest.js', 'Redux', 'Postgresql',"React Router","Shadcn Ui"],
+      technologies: ['Tailwind',"Javascript", 'React js', "Node js" ,'Nest.js', 'Redux', "Type ORM", 'Postgresql',"React Router","Shadcn Ui",'JWT',],
       liveLink: '#',
       detailsLink: '/managerdetails',
     },
     {
       image: slacms, // Replace with actual image paths
       title: 'SLACMS',
-      description: 'An exclusive phone reselling website. There are several categories with several products. Sellers and buyers can have their own role to sell and buy products.',
-      technologies: ['Tailwind', 'MerakiUI', 'React', 'MongoDB', 'JWT'],
+      description: 'A Student Life and Career Management System ,In this system, students can create their professional resumes, while both teachers and students can manage and update daily class schedules  .',
+      technologies: ['Tailwind', "Javascript",'React', "React Router" ,'MongoDB', 'Mongoose',"Node js" , "Express js"],
       liveLink: '#',
       detailsLink: '/slamcsdetails',
     },
     {
-      image: 'https://via.placeholder.com/300x200', // Replace with actual image paths
+      image: ruby, // Replace with actual image paths
       title: 'Ruby Medical Camp',
-      description: 'An exclusive Poster-related service website. Several services that a person offers along with reviews are displayed.',
-      technologies: ['Tailwind', 'React', 'Node.js', 'DaisyUI', 'MongoDB'],
+      description: ' This is a medical camp management website. This website has roles of all three. Here participants can join different camps. Can register for upcoming Camps.Organizers can add new Camps from their dashboard. And he can manage them.Professionals can make wishes in the upcoming times.',
+      technologies: ['Tailwind', "Javascript ",'React',' Mui', 'Node.js', "Express js", 'MongoDB',"Stripe ","Firebase ","Axois","JWT"],
       liveLink: '#',
       detailsLink: '/rubydetails',
     },
@@ -39,7 +39,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <div key={index} className="bg-white  text-black p-6 rounded-lg shadow-md">
-            <img src={project.image} alt={project.title} className="mb-4  rounded-md" />
+            <img src={project.image} alt={project.title} className="mb-4 shaw shadow-lg rounded-md" />
             <h3 className="text-xl text-[#EC4899] font-semibold">{project.title}</h3>
             <p className="mb-4">{project.description}</p>
             <h4 className="font-medium">Technologies:</h4>
